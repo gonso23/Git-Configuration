@@ -4,7 +4,9 @@ Work with multible accounts
 user.name, user.email and credentails are used based on folder prefix in path
 
 
-## .gitconfig
+---
+
+### .gitconfig
 
 ```ini
 [user]
@@ -18,7 +20,7 @@ user.name, user.email and credentails are used based on folder prefix in path
     path = ${HOME}/.userA_gitconfig
 ```
 
-## ${HOME}/.userA_gitconfig
+### ${HOME}/.userA_gitconfig
 
 ```ini
 [user]
@@ -29,9 +31,9 @@ user.name, user.email and credentails are used based on folder prefix in path
     helper = store --file ~/.userA-credentials
 ```
 
-## .userA-credentials
+### .userA-credentials
 
-### GitHub - Personal Access Tokens (PATs)
+#### GitHub - Personal Access Tokens (PATs)
 
 1. Go to GitHub Settings https://github.com/settings/apps
 2. Click on "Personal access tokens"
@@ -43,6 +45,10 @@ user.name, user.email and credentails are used based on folder prefix in path
 https://userA:userAToken@github.com
 ```
 
+
+---
+---
+
 ## Daily Work
 
 ### Clone a Repository
@@ -52,6 +58,11 @@ git clone https://github.com/YourUsername/YourRepository.git userA_YourRepositor
 ```
 
 Or initialize within `../userA_something/...`
+
+
+
+---
+---
 
 ## Did You Already Use the Wrong User?
 
@@ -95,12 +106,23 @@ fi
 git push --force
 ```
 
-## PowerShell - Windows Credentials
 
-Sometimes on a Windows PC, there are already credentials for Git, and they may be problematic.
+---
+---
+
+## PowerShell & Windows Credentials
+### .gitconfig
+
+one of your users can use the Windows Credential Manager for the target "git:https://github.com/"
+
+```ini
+[credential]
+    helper = wincred
+
+```
 
 ### Install Credential Manager
-
+Sometimes on a Windows PC, there are already credentials for Git, and they may be problematic.
 ```powershell
 Install-Module -Name CredentialManager
 ```
