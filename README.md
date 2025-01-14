@@ -33,7 +33,7 @@ user.name, user.email and credentails are used based on folder prefix in path
 
 ### GitHub - Personal Access Tokens (PATs)
 
-1. Go to GitHub Settings
+1. Go to GitHub Settings https://github.com/settings/apps
 2. Click on "Personal access tokens"
 3. Click on "Tokens (classic)"
 4. Click on "Generate new token"
