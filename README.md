@@ -45,7 +45,26 @@ user.name, user.email and credentails are used based on folder prefix in path
 https://userA:userAToken@github.com
 ```
 
+###Git Credential Helper Configuration
 
+Git uses the following configuration structure:
+```
+Installation 	git config --system
+User 			git config --global
+Repository 		git config
+```
+
+The Windows Git installation activates Git Credential Manager (GCM) by default. This may conflict with your custom configurations.
+
+Check your current settings with:
+```text
+git config --list --show-origin
+```
+
+If needed, disable system-wide credential helper settings:
+```text
+git config --system --unset credential.helper
+```
 ---
 ---
 
