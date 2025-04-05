@@ -45,7 +45,7 @@ user.name, user.email and credentails are used based on folder prefix in path
 https://userA:userAToken@github.com
 ```
 
-###Git Credential Helper Configuration
+### Git Credential Helper Configuration
 
 Git uses the following configuration structure:
 ```
