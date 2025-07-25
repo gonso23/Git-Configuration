@@ -129,10 +129,15 @@ git push --force
 ---
 ---
 
+## GUI to remove
+german: Anmeldeinformationsverwaltung
+english: Credential Manager
+
 ## PowerShell & Windows Credentials
 ### .gitconfig
 
 one of your users can use the Windows Credential Manager for the target "git:https://github.com/"
+but for me this never worked IRL
 
 ```ini
 [credential]
